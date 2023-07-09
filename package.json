@@ -1,0 +1,26 @@
+{
+  "name": "para_quem_posso_doar",
+  "version": "0.0.1",
+  "description": "Um aplicação depoio para identificar para qual tipo sanguineo é possível ser doador",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "blood",
+    "type",
+    "blood",
+    "bloodtype",
+    "tipo",
+    "sanguineo",
+    "doador",
+    "de",
+    "sangue",
+    "blood",
+    "donor",
+    "donor",
+    "doador"
+  ],
+  "author": "Jarbas (Jr)",
+  "license": "ISC"
+}
