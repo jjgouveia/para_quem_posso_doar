@@ -3,120 +3,132 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Jarbas (Jr) Gouveia" />
+    <meta name="keywords" content="sangue, doação, tipo sanguineo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubra os tipos sanguíneos compatíveis com o seu sangue e ajude vidas!">
     <title>Para quem posso doar?</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.svg">
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://kit.fontawesome.com/e36461448b.js" crossorigin="anonymous"></script>
     <script defer src="./js/index.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 
 <body>
-    <div id="about">
-        <div class="mySocial">
-            <a class="social" href="https://www.linkedin.com/in/jarbasgouveia/" target="_new"><i
-                    class="fab fa-linkedin"></i></a><a class="social" href="https://github.com/jjgouveia"
-                target="_new"><i class="fab fa-github"></i></a><a class="social" href="https://twitter.com/outrogouveia"
-                target="_new"><i class="fab fa-twitter"></i></a><a class="social"
-                href="https://www.gov.br/saude/pt-br/composicao/saes/sangue#:~:text=Doa%C3%A7%C3%A3o%20de%20Sangue%20%E2%80%94%20Minist%C3%A9rio%20da%20Sa%C3%BAde%20%C3%93rg%C3%A3os,idioma%20Entrar%20com%20o%20gov.br%20Minist%C3%A9rio%20da%20Sa%C3%BAde"
-                target="_new"><i class="fas fa-globe"></i></a>
-        </div>
-    </div>
-    <div id="content">
-        <h1>Para quem posso doar?</h1>
-        <h3>Seu tipo sanguíneo:</h3>
-        <div id="blood_selector">
-            <div>O−</div>
-            <div>O+</div>
-            <div>A−</div>
-            <div>A+</div>
-            <div>B−</div>
-            <div>B+</div>
-            <div>AB−</div>
-            <div>AB+</div>
-        </div>
-        <div id="blood_content">
-            <div class="bar"></div>
-            <div class="main_bag">
-                <div class="blood"></div>
+    <div class="container">
+        <div id="about">
+            <div class="mySocial">
+                <a class="social" href="https://www.linkedin.com/in/jarbasgouveia/" target="_new"><i
+                        class="fab fa-linkedin"></i></a><a class="social" href="https://github.com/jjgouveia"
+                    target="_new"><i class="fab fa-github"></i></a><a class="social"
+                    href="https://twitter.com/outrogouveia" target="_new"><i class="fab fa-twitter"></i></a><a
+                    class="social"
+                    href="https://www.gov.br/saude/pt-br/composicao/saes/sangue#:~:text=Doa%C3%A7%C3%A3o%20de%20Sangue%20%E2%80%94%20Minist%C3%A9rio%20da%20Sa%C3%BAde%20%C3%93rg%C3%A3os,idioma%20Entrar%20com%20o%20gov.br%20Minist%C3%A9rio%20da%20Sa%C3%BAde"
+                    target="_new"><i class="fas fa-globe"></i></a>
             </div>
         </div>
-        <div id="center_via_c">
-            <div class="center_via">
-                <div class="blood_via"></div>
+        <div id="content">
+            <div className="title-wrapper">
+                <h1>Para quem posso doar?</h1>
             </div>
-        </div>
-        <div id="humans">
-            <div class="human left">
-                <div class="scribble">
-                    <span class="blood_type">O−</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+            <h3>Seu tipo sanguíneo:</h3>
+            <div class="blood_selector_container">
+                <div id="blood_selector" className="blood-selector">
+                    <div>O−</div>
+                    <div>O+</div>
+                    <div>A−</div>
+                    <div>A+</div>
+                    <div>B−</div>
+                    <div>B+</div>
+                    <div>AB−</div>
+                    <div>AB+</div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
             </div>
-            <div class="human right">
-                <div class="scribble">
-                    <span class="blood_type">O+</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+            <div id="blood_content">
+                <div class="bar"></div>
+                <div class="main_bag">
+                    <div class="blood"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
             </div>
-            <div class="human left">
-                <div class="scribble">
-                    <span class="blood_type">A−</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+            <div id="center_via_c">
+                <div class="center_via">
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
             </div>
-            <div class="human right">
-                <div class="scribble">
-                    <span class="blood_type">A+</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+            <div id="humans">
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">O−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
-            </div>
-            <div class="human left">
-                <div class="scribble">
-                    <span class="blood_type">B−</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">O+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
-            </div>
-            <div class="human right">
-                <div class="scribble">
-                    <span class="blood_type">B+</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">A−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
-            </div>
-            <div class="human left">
-                <div class="scribble">
-                    <span class="blood_type">AB−</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">A+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
-            </div>
-            <div class="human right">
-                <div class="scribble">
-                    <span class="blood_type">AB+</span>
-                    <div class="head"></div>
-                    <div class="body"></div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">B−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
                 </div>
-                <div class="via"></div>
-                <div class="blood_via"></div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">B+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">AB−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">AB+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
             </div>
         </div>
     </div>
