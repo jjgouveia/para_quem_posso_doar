@@ -21,7 +21,8 @@ body {
 #about a i.fa-linkedin {
   color: #0073b0;
 }
-#about a i.fa-github, #about a i.fa-globe {
+#about a i.fa-github,
+#about a i.fa-globe {
   color: #24292e;
 }
 #about a i.fa-twitter {
@@ -253,22 +254,27 @@ h3 {
 @media only screen and (max-width: 400px) {
   #content {
     position: relative;
-    margin: 25px auto;
+    margin: 50px 4% 0;
     width: 300px;
     height: 300px;
   }
   #content h3 {
-    top: 10px;
+    top: 155%;
+    width: 100%;
     font-size: 1em;
   }
   #content #blood_selector {
-    width: 150px;
-    height: 75px;
+    width: 180px;
+    height: 80px;
     font-size: 0.75em;
-    top: 45px;
+    top: 70%;
+    margin: 0 24.9%;
+    position: fixed;
+    flex-wrap: nowrap;
   }
+
   #content .bar {
-    top: 40px;
+    top: 70px;
   }
   #content .main_bag {
     width: 75px;
