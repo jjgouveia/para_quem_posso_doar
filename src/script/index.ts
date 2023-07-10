@@ -16,7 +16,6 @@ const blood_bag: Element | null = document.querySelector("#blood_content > div.m
 const center_via: Element | null = document.querySelector(".center_via > .blood_via");
 const blood_types: NodeListOf<Element> = document.querySelectorAll(".blood_type");
 let lastCalled: { target: { classList: { remove: (className: string) => void } } } | null;
-addListeners();
 
 function callIfChildren(this: any, e: Event) {
     if (lastCalled) change();
