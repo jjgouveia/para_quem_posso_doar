@@ -88,7 +88,7 @@
                     target="_new" title="Governo do Brasil"><i class="fa-solid fa-shield-halved"></i></a>
             </header>
         </div>
-        <button class="mode-toggle" onclick="toggleMode()">
+        <button type="button" class="mode-toggle" onclick="toggleMode()" title="Controle do tema">
             <script>
                 const container = document.querySelector('.container');
                 const savedMode = localStorage.getItem('darkMode');
@@ -104,7 +104,7 @@
             <div className="title-wrapper">
                 <h1>Para quem posso doar?</h1>
             </div>
-            <h3>Seu tipo sanguíneo:</h3>
+            <h2>Seu tipo sanguíneo:</h2>
             <div class="blood_selector_container">
                 <div id="blood_selector" className="blood-selector">
                     <div>O−</div>
