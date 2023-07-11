@@ -38,3 +38,5 @@ O projeto está disponível em: [https://paraquempossodoar.vercel.app](https://p
     * Modo noturno;
     * Melhorias de indexação e SEO;
     * Melhorias de acessibilidade;
+* 1.0.1
+    * Progressive Web App (PWA);

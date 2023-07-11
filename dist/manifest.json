@@ -1,0 +1,32 @@
+{
+    "background_color": "#f7f7f7",
+    "description": "Descubra os tipos sanguíneos compatíveis com o seu e sinta-se incentivado a ajudar vidas!",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "Para Quem Posso Doar?",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "Para Quem Posso Doar?",
+    "start_url": "/",
+    "theme_color": "#b51e23",
+    "categories": [
+        "education",
+        "health",
+        "lifestyle",
+        "medical",
+        "utilities"
+    ],
+    "screenshots": [],
+    "icons": [
+        {
+            "src": "./assets/favicon.svg",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/jjgouveia/sturdy-doodle/main/127.0.0.1_5500_dist_index.html(Nest%20Hub).png",
+            "type": "image/png",
+            "sizes": "2048x1200"
+        }
+    ],
+    "lang": "pt"
+}
