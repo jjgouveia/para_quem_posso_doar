@@ -451,8 +451,8 @@ h2 {
     font-size: 0.85em;
     top: 550px;
     margin: 0 70px;
+    left: auto;
     position: fixed;
-    flex-wrap: nowrap;
   }
   #content .bar {
     top: 80px;
@@ -505,9 +505,8 @@ h2 {
     font-size: 0.85em;
     top: 550px;
     position: fixed;
-    flex-wrap: nowrap;
     left: auto;
-    right: -5px;
+    right: auto;
   }
 }
 
