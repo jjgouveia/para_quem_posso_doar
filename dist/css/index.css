@@ -96,9 +96,11 @@ h3 {
   border-radius: 25%;
 }
 #blood_selector div:hover {
-  border: 1px solid #1da1f2;
+  transition: all 0.1s ease;
+  border: 1px solid #fa762f;
   font-weight: bold;
   cursor: pointer;
+  color: #b51e23;
 }
 
 #blood_content {
@@ -314,6 +316,11 @@ h3 {
 
 .dark-mode #about a i.fa-address-card {
   color: #f55c5c;
+}
+
+.dark-mode #blood_selector div {
+  color: #24292e;
+  background-color: #fed5d3;
 }
 
 .mode-toggle {
