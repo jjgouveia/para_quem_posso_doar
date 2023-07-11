@@ -1,10 +1,10 @@
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    function adopt (value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        function fulfilled (value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected (value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step (result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -27,13 +27,13 @@ const center_via = document.querySelector(".center_via > .blood_via");
 const blood_types = document.querySelectorAll(".blood_type");
 let lastCalled;
 addListeners();
-function callIfChildren(e) {
+function callIfChildren (e) {
     if (lastCalled)
         change();
     if (e.target !== this)
         setRecipents(e);
 }
-function addListeners() {
+function addListeners () {
     if (!selector)
         return;
     selector.addEventListener("click", callIfChildren);
@@ -41,7 +41,7 @@ function addListeners() {
         return;
     reset_button.addEventListener("click", reset);
 }
-function reset() {
+function reset () {
     change();
     if (!blood_bag)
         return;
@@ -50,22 +50,24 @@ function reset() {
         return;
     center_via.style.height = "0px";
 }
-function change() {
+function change () {
     if (lastCalled) {
         lastCalled.target.classList.remove("highlight");
+        lastCalled.target.classList.remove("active");
     }
     for (let i = 0; i < blood_vias.length; i++) {
         blood_vias[i].style.width = "0px";
         blood_types[i].classList.remove("highlightText");
     }
 }
-function timeout(ms) {
+function timeout (ms) {
     return new Promise((resolve) => setTimeout(resolve, Number(ms)));
 }
-function setRecipents(e) {
+function setRecipents (e) {
     return __awaiter(this, void 0, void 0, function* () {
         const target = e.target;
         target.classList.add("highlight");
+        target.classList.add("active");
         lastCalled = { target };
         const donor = target.innerText;
         for (let item of BLOOD_TYPES[donor]) {

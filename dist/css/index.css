@@ -275,12 +275,14 @@ h3 {
 }
 
 .highlight {
-  border: 2px solid #b51e23 !important;
+  transition: border 0.15s ease-in;
+  border: 3px solid #b51e23 !important;
   font-weight: bold;
 }
 
 .highlightText {
   font-weight: bold;
+  color: #b51e23;
 }
 
 .dark-mode {
@@ -327,13 +329,52 @@ h3 {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 400px) {
-  #about a i {
-    font-size: 1.2em;
+@media only screen and (max-width: 700px) {
+  #content h3 {
+    margin-top: 0;
+    top: 520px;
+    width: 93%;
+    margin: 0 35px;
+    font-size: 1em;
   }
+
+  #content #blood_selector {
+    width: 180px;
+    height: 80px;
+    font-size: 0.75em;
+    top: 700px;
+    margin: 0 95px;
+    position: fixed;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.9em;
+  }
+
+  #content h3 {
+    margin-top: 0;
+    top: 520px;
+    width: 93%;
+    margin: 0 35px;
+    font-size: 1em;
+  }
+
+  #content #blood_selector {
+    width: 180px;
+    height: 80px;
+    font-size: 0.75em;
+    top: 700px;
+    margin: 0 95px;
+    position: fixed;
+    flex-wrap: nowrap;
+  }
+  /* Experomental */
   #content {
     position: relative;
-    margin: 65px 5% 0;
+    margin: 95px 5% 0;
     width: 90%;
     height: 300px;
   }
@@ -350,6 +391,58 @@ h3 {
     font-size: 0.75em;
     top: 580px;
     margin: 0 95px;
+    position: fixed;
+    flex-wrap: nowrap;
+  }
+  #content .bar {
+    top: 114px;
+  }
+  #content .main_bag {
+    width: 75px;
+    height: 105px;
+    left: 137px;
+  }
+  #content .main_bag::before {
+    top: -108px;
+    height: 100px;
+  }
+  #content .main_bag .blood {
+    height: 70%;
+  }
+  #content #center_via_c .center_via {
+    left: 180px;
+    top: 240px;
+  }
+  #content #humans {
+    top: 240px;
+    width: 180px;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #about a i {
+    font-size: 1.2em;
+  }
+  #content {
+    position: relative;
+    margin: 65px 5% 0;
+    width: 90%;
+    height: 300px;
+  }
+  #content h3 {
+    margin-top: 0;
+    top: 151%;
+    width: 93%;
+    margin: 0 35px;
+    font-size: 1em;
+  }
+  #content #blood_selector {
+    width: 210px;
+    height: 95px;
+    font-size: 0.85em;
+    top: 550px;
+    margin: 0 70px;
     position: fixed;
     flex-wrap: nowrap;
   }
@@ -399,14 +492,14 @@ h3 {
     font-size: 1em;
   }
   #content #blood_selector {
-    width: 180px;
-    height: 80px;
-    font-size: 0.75em;
-    top: 560px;
+    width: 210px;
+    height: 95px;
+    font-size: 0.85em;
+    top: 550px;
     position: fixed;
     flex-wrap: nowrap;
     left: auto;
-    right: -10px;
+    right: -5px;
   }
 }
 

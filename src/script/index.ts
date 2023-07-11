@@ -57,6 +57,7 @@ function timeout(ms: number | string): Promise<void> {
 async function setRecipents(e: Event) {
     const target = e.target as HTMLElement;
     target.classList.add("highlight");
+
     lastCalled = { target };
 
     const donor = target.innerText;
