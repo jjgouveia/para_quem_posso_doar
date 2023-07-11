@@ -1,3 +1,14 @@
+body div.darkmode {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem 1rem 0.75rem 1rem;
+  cursor: pointer;
+}
+body.dark .darkmode .light,
+body:not(.dark) .darkmode .dark {
+  display: none;
+}
+
 body {
   overflow-y: hidden;
   background: #f7f7f7;
@@ -34,11 +45,11 @@ body {
 #about a i.fa-github {
   color: #24292e;
 }
-#about a i.fa-globe {
-  color: #24292e;
+#about a i.fa-shield-halved {
+  color: #c0a107;
 }
-#about a i.fa-twitter {
-  color: #1da1f2;
+#about a i.fa-address-card {
+  color: #f2521d;
 }
 
 #content {
@@ -272,7 +283,54 @@ h3 {
   font-weight: bold;
 }
 
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #f55c5c;
+  transition: all 0.3s ease;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+.dark-mode .blood-selector div {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark-mode #about a i.fa-linkedin {
+  color: #f55c5c;
+}
+
+.dark-mode #about a i.fa-github {
+  color: #f55c5c;
+}
+
+.dark-mode #about a i.fa-shield-halved {
+  color: #f55c5c;
+}
+
+.dark-mode #about a i.fa-address-card {
+  color: #f55c5c;
+}
+
+.mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  border: none;
+  background-color: transparent;
+}
+
+.mode-toggle i {
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 400px) {
+  #about a i {
+    font-size: 1.2em;
+  }
   #content {
     position: relative;
     margin: 65px 5% 0;
@@ -321,12 +379,11 @@ h3 {
   }
   h1 {
     font-size: 1.5em;
-    top: -12px;
+    top: -18px;
     width: 100%;
     margin: 0 auto;
   }
 }
-
 @media only screen and (max-width: 370px) {
   #content {
     position: relative;
@@ -349,7 +406,7 @@ h3 {
     position: fixed;
     flex-wrap: nowrap;
     left: auto;
-    right: -13px;
+    right: -10px;
   }
 }
 
