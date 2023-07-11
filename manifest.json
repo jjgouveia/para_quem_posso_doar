@@ -19,7 +19,7 @@
     "screenshots": [],
     "icons": [
         {
-            "src": "./assets/favicon.svg",
+            "src": ".dist/assets/favicon.svg",
             "type": "image/svg+xml"
         },
         {
