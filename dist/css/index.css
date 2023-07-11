@@ -54,14 +54,14 @@ body {
 
 #content {
   position: relative;
-  margin: 50px auto;
+  margin: 80px auto;
   width: 600px;
   height: 600px;
 }
 
 h1 {
   position: absolute;
-  top: -60px;
+  top: -65px;
   text-align: center;
   left: 0px;
   width: 100%;
@@ -133,7 +133,7 @@ h3 {
 .bar {
   position: fixed;
   right: 0;
-  top: 55px;
+  top: 90px;
   width: 55%;
   height: 8px;
   border-radius: 2px 0 0 2px;
