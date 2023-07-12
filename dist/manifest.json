@@ -26,6 +26,16 @@
             "src": "https://raw.githubusercontent.com/jjgouveia/sturdy-doodle/main/127.0.0.1_5500_dist_index.html(Nest%20Hub).png",
             "type": "image/png",
             "sizes": "2048x1200"
+        },
+        {
+            "src": "./assets/512-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "./assets/48-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
         }
     ],
     "lang": "pt"
