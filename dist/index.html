@@ -10,7 +10,7 @@
     <link rel="manifest" href="./manifest.json" />
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('./js/pwabuilder-sw.js')
+            navigator.serviceWorker.register('pwabuilder-sw.js')
                 .then(() => console.log('Service Worker Registered'))
                 .catch((err) => console.log('Service Worker Not Registered', err))
         }
