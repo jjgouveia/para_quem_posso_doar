@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jr Gouveia" />
+    <meta name="keywords" content="sangue, doação, tipo sanguineo">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./manifest.json" />
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('pwabuilder-sw.js')
+                .then(() => console.log('Service Worker Registered'))
+                .catch((err) => console.log('Service Worker Not Registered', err))
+        }
+    </script>
+    <!-- Primary Meta Tags -->
+    <title>Para Quem Posso Doar? 🩸</title>
+    <meta name="title" content="Para Quem Posso Doar?" />
+    <meta name="description"
+        content="Descubra os tipos sanguíneos compatíveis com o seu e sinta-se incentivado a ajudar vidas!" />
+    <meta ver="1.0.0" />
+    <meta name="theme-color" content="#b51e23" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b51e23" />
+    <meta name="msapplication-navbutton-color" content="#b51e23" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paraquempossodoar.vercel.app/" />
+    <meta property="og:title" content="Para quem posso doar?" />
+    <meta property="og:description"
+        content="Descubra os tipos sanguíneos compatíveis com o seu e sinta-se incentivado a ajudar vidas!" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/jjgouveia/sturdy-doodle/main/127.0.0.1_5500_dist_index.html(Nest%20Hub).png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://paraquempossodoar.vercel.app/" />
+    <meta property="twitter:title" content="Para quem posso doar?" />
+    <meta property="twitter:description"
+        content="Descubra os tipos sanguíneos compatíveis com o seu e sinta-se incentivado a ajudar vidas!" />
+    <meta property="twitter:image"
+        content="https://raw.githubusercontent.com/jjgouveia/sturdy-doodle/main/127.0.0.1_5500_dist_index.html(Nest%20Hub).png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="icon" type="image/png" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/e36461448b.js" crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <script defer src="/_vercel/insights/script.js"></script> -->
+
+    <script>
+        function toggleMode () {
+            const container = document.querySelector('.container');
+            container.classList.toggle('dark-mode');
+
+            const isDarkMode = container.classList.contains('dark-mode');
+
+            localStorage.setItem('darkMode', isDarkMode);
+            const modeToggle = document.querySelector('.mode-toggle');
+
+
+            if (isDarkMode) {
+                modeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                modeToggle.style.color = '#c5a732';
+            } else {
+                modeToggle.innerHTML = '<i class="fas fa-moon"></i>'
+                modeToggle.style.color = '#000';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.container');
+            const savedMode = localStorage.getItem('darkMode');
+
+            if (savedMode === 'true') {
+                container.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="about">
+            <header class="mySocial">
+                <a class="social" href="https://www.linkedin.com/in/jarbasgouveia/" target="_new" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social" href="https://juniorgouveia.me/" target="_new" title="Meu Portifólio"><i
+                        class="fa-solid fa-address-card"></i></a>
+                <a class="social" href="https://github.com/jjgouveia/para_quem_posso_doar" target="_new"
+                    title="GitHub"><i class="fab fa-github"></i></a>
+                <a class="social"
+                    href="https://www.gov.br/saude/pt-br/composicao/saes/sangue#:~:text=Doa%C3%A7%C3%A3o%20de%20Sangue%20%E2%80%94%20Minist%C3%A9rio%20da%20Sa%C3%BAde%20%C3%93rg%C3%A3os,idioma%20Entrar%20com%20o%20gov.br%20Minist%C3%A9rio%20da%20Sa%C3%BAde"
+                    target="_new" title="Governo do Brasil"><i class="fa-solid fa-shield-halved"></i></a>
+            </header>
+        </div>
+        <button type="button" class="mode-toggle" onclick="toggleMode()" title="Controle do tema">
+            <script>
+                const container = document.querySelector('.container');
+                const savedMode = localStorage.getItem('darkMode');
+
+                if (savedMode === 'true') {
+                    document.write('<i style="color:#c5a732" class="fas fa-sun"></i>');
+                } else {
+                    document.write('<i class="fas fa-moon"></i>');
+                }
+            </script></i>
+        </button>
+        <main id="content">
+            <div className="title-wrapper">
+                <h1>Para quem posso doar?</h1>
+            </div>
+            <h2>Seu tipo sanguíneo:</h2>
+            <div class="blood_selector_container">
+                <div id="blood_selector" className="blood-selector">
+                    <div>O−</div>
+                    <div>O+</div>
+                    <div>A−</div>
+                    <div>A+</div>
+                    <div>B−</div>
+                    <div>B+</div>
+                    <div>AB−</div>
+                    <div>AB+</div>
+                </div>
+            </div>
+            <div id="blood_content">
+                <div class="bar"></div>
+                <div class="main_bag">
+                    <div class="blood"></div>
+                </div>
+            </div>
+            <div id="center_via_c">
+                <div class="center_via">
+                    <div class="blood_via"></div>
+                </div>
+            </div>
+            <div id="humans" title="Quem pode receber o seu sangue">
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">O−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">O+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">A−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">A+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">B−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">B+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human left">
+                    <div class="scribble">
+                        <span class="blood_type">AB−</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+                <div class="human right">
+                    <div class="scribble">
+                        <span class="blood_type">AB+</span>
+                        <div class="head"></div>
+                        <div class="body"></div>
+                    </div>
+                    <div class="via"></div>
+                    <div class="blood_via"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
